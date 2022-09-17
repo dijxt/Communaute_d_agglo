@@ -1,23 +1,14 @@
-html, body {
+/*html, body {
     margin: 0;
     height: 100%;
     width: 100%;
-}
-
+}*/
 
 body 
 { 
     width: 100%;
-    border: red solid 2px;
     margin: auto;
-    display: grid;
-    grid-template-rows: 1fr 3fr 8fr 2fr;
-    grid-template-columns:1fr 9fr 1fr;
-    
-}
-
-header{
-    background-color: rgb(255, 72, 0);
+    padding: 0;
 }
 
 .corps{
@@ -32,31 +23,88 @@ footer{
     background-color: rgb(5, 145, 35);
 }
 
+.grille{
+    display: grid;
+    grid-template-rows: 1fr 9fr 8fr 2fr;
+    grid-template-columns:1fr 9fr 1fr;
+}
+
 #c1{
     grid-column: 1/-1;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    opacity: 0.9;    
+    
 }
+
+#c1:hover{
+    opacity: 1;
+}
+
+div.navbar-collapse{
+    background-color: #ffb005;
+    border-radius: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nav-link{
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5em 1em 0.5em 1em ;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    
+}
+
+.d-flex {
+    margin: 0.75em 1em 1em 0.75em;
+    min-width: 160px;
+}
+
+.form-control {
+    border-radius: 2px;
+}
+
 
 #c2{
     grid-column: 1/-1;
+    background-image: url('../images/privas-ardeche2.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#c2 > p{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bolder;
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke: 2px #FFF;
+}
 
 #c6{
     grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-
-.imageHaut{
-    height:100%;
-    width: 100%;
-    background-image: url('../images/privas-ardeche.jpg');
-
-    background-size: contain;
-    background-repeat: no-repeat;
-
+.foot {
+    background-color: greenyellow;
+    width: 20%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-div.logo
+.logo
 {
     height: 80px;
     width: 178px;
@@ -72,8 +120,24 @@ div.logo
     height: 30%;
 }
 
-
-
+/*
+@media (max-width: 1280px) {
+    #c6 {
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot {
+        background-color: greenyellow;
+        width: 80%;
+        height: 200px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+*/
 /*
 .en1clic // les cases en dessous des articles
 {
@@ -91,3 +155,21 @@ div.logo
 
 }
 */
+
+/*
+@media (max-width: 1280px) {
+    #c6 {
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: colum;
+        align-items: center;
+    }
+    .foot {
+        background-color: greenyellow;
+        width: 80%;
+        height: 200px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
