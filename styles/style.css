@@ -20,7 +20,7 @@ body
 }
 
 footer{
-    background-color: rgb(99, 99, 99);
+    background-color: grey;
 }
 
 .grille{
@@ -131,7 +131,8 @@ div.navbar-collapse{
 
 
 .foot {
-    background-color: rgb(210, 210, 210);
+    background-color: rgba(255, 255, 255, 0.719);
+    border: 1px solid black;
     width: 20%;
     text-align: center;
     margin-top: 5px;
