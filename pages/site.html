@@ -14,6 +14,13 @@
       crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="..\styles\style.css">
+    <link rel="stylesheet" href="..\styles\styleNB.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+      rel="stylesheet"
+    />
     
 </head>
 
@@ -21,78 +28,27 @@
 
     <div class="grille ">
         <!-- NAVBAR -->
-        <nav id="c1" class="navbar navbar-expand-lg navbar-dark bg-warning" data-mdb-right="true">
-            <div class="container-fluid">
-                <a href="site.html"><div class="logo"></div></a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    >
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-body active" aria-current="page" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-body" href="#">Compétences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-body" href="#">Expériences</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                            class="nav-link dropdown-toggle text-body"
-                            href="#"
-                            id="navbarDropdownMenuLink"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                                Actus
-                            </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                
-                                <li>
-                                    <a class="dropdown-item text-body" href="#">
-                                        Démineur
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-body" href="#">
-                                        PCCgraphes
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-body" href="#">
-                                        6QuiPrend
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <form class="d-flex">
-                                <input class="form-control mr-2" type="search" placeholder="Rechercher" aria-label="Search">
-                                <button class="btn btn-outline-dark" type="submit">
-                                    Search
-                                </button>
-                            </form>
-                        </li>
-                    </ul>
-                    
-                </div>
-            </div>
-        </nav>
-        <!-- NAVBAR -->
+        <nav id="c1">
 
-        <div class="bordureBasDroit"></div>
+            <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
+              <img src="../images/Logo_CA_Privas_Centre_Ardeche.png" alt="Logo_CA_Privas_Centre_Ardeche">
+            </a>
+      
+            <div class="main-navlinks">
+              <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="navlinks-container">
+                <a href="#" aria-current="page">Accueil</a>
+                <a href="#">Découvrir la région</a>
+                <a href="#">Economie</a>
+                <a href="#">Les actus</a>
+              </div>
+            </div>
+          </nav>
+        <!-- NAVBAR -->
 
         <div id="c2"><p>Bienvenue sur le site de l'agglomération<br>PRIVAS CENTRE ARDÈCHE</p></div>
 
@@ -125,5 +81,6 @@
             <div class="foot">Nous retrouver</div>
         </footer>
     </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
