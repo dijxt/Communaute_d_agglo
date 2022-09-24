@@ -12,21 +12,24 @@ body
 }
 
 .corps{
-    background-color: rgb(158, 228, 228);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction:column;
+
+
 }
 
-footer{
-    background-color: grey;
-}
+/*
+.corps:hover #a1, #a2, #a3, #a4,
+.corps:focus #a1, #a2, #a3, #a4 {
+  transform: scale(1.2);
+}*/
 
 .grille{
     display: grid;
-    grid-template-rows: 1fr 12fr 10fr 3fr;
-    grid-template-columns:0fr 9fr 0fr;
+    grid-template-rows: 0fr 12fr 16fr 4fr;
 }
 
 #c1{
@@ -37,41 +40,14 @@ footer{
     opacity: 1;    
 }
 
-div.navbar-collapse{
-    background-color: #ffb005;
-    border-radius: 3px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.nav-link{
-    font-size: larger;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0.5em 1em 0.5em 1em ;
-}
-
-.nav-link:hover{
-    text-decoration: underline;
-    
-}
-
-.d-flex {
-    margin: 0.75em 1em 1em 0.75em;
-    min-width: 160px;
-}
-
-.form-control {
-    border-radius: 2px;
-}
-
 .bordureBasDroit {
     height: 6em;
     width: 14em;
     background-image: url("../images/logoJauneNavbar.png");
     background-size: cover;
     position: fixed;
-    top:65px;
-    right: -10px;
+    top:22px;
+    right: -7px;
 }
 
 #c2{
@@ -84,23 +60,31 @@ div.navbar-collapse{
     align-items: center;
 }
 
-#c2 > p{
+
+#a1 {
+    background-image: url("../images/decouvrir_region/kanoe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#c2 > h1{
     color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight:bolder;
     text-align: center;
     font-size: 60px;
     -webkit-text-stroke: 2px #FFF;
+    animation: fadeIn 2.5s;
 }
 
-#c6{
-    grid-column: 1/-1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-#c4 {
+
+
+#c3 {
     display: grid;
     flex-direction: row;
     grid-template-rows: 1fr 1fr;
@@ -108,10 +92,32 @@ div.navbar-collapse{
     background-color: rgba(255, 255, 255, 0.719);
 }
 
-#a1{
+#a1, #a2, #a3, #a4{ 
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    /*transition: all .5s;*/
+}
+
+#b1, #b2, #b3, #b4 {
+    position: absolute;
+    font-size: 30px;
+    top: -17px;
+    left: 0px;
+    z-index: 2;
+    background-color: #FAD02C;
+}
+
+#b1 > p, #b2 > p, #b3 > p, #b4 > p{
+    padding: 4px;
+}
+
+
+
+#a1 {
     grid-row-start: 1;
-    grid-column-start: 2;
-    
+    grid-column-start: 2;  
 }
 
 #a2{
@@ -130,14 +136,6 @@ div.navbar-collapse{
 }
 
 
-.foot {
-    background-color: rgba(255, 255, 255, 0.719);
-    border: 1px solid black;
-    width: 20%;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 
 .logo
 {
@@ -152,8 +150,8 @@ div.navbar-collapse{
 
 .article{
     background-color: grey;
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 90%;
     text-align: center;
     margin: auto;
 }
@@ -180,7 +178,7 @@ div.navbar-collapse{
 }
 
 @media (max-width: 1280px) {
-    #c4 {
+    #c3 {
         display: grid;
         flex-direction: column;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -208,38 +206,42 @@ div.navbar-collapse{
         grid-column-start: 1;
     }
     .bordureBasDroit {
-        height: 5em;
-        width: 11em;
-        top: 70px;
-        right: -10px;
+        display: none;
     }
     
 
-    #c2 > p{
+    #c2 > h1{
         font-size: 40px;
         -webkit-text-stroke: 1px #FFF;
     }
     
     .grille{
         display: grid;
-        grid-template-rows: 0fr 2fr 8fr 2fr;
-        grid-template-columns:0fr 9fr 0fr;
-    }
-    #c6 {
-        grid-column: 1/-1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .foot {
-        width: 70%;
-        height: 30vh;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        grid-template-rows: 0fr 7fr 20fr 7fr;
     }
 }
 
+@media (max-width: 800px) {
+
+    #a1, #a2, #a3, #a4{ 
+        z-index: 1;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    #b1, #b2, #b3, #b4 {
+        position: absolute;
+        font-size: 20px;
+        top: -11px;
+        left: 0px;
+        z-index: 2;
+        background-color: #FAD02C;
+    }
+    
+    #b1 > p, #b2 > p, #b3 > p, #b4 > p{
+        padding: 2px;
+    }
+}
 
 /*
 @media (max-width: 1280px) {
