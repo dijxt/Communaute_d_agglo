@@ -1,22 +1,22 @@
-.foot > a:link {
+#lienFOOT:link {
   color: #265301;
 }
 
-.foot > a:visited {
+#lienFOOT:visited {
   color: #437A16;
 }
 
-.foot > a:focus {
+#lienFOOT:focus {
   border-bottom: 1px solid;
   background: #BAE498;
 }
 
-.foot > a:hover {
+#lienFOOT:hover {
   border-bottom: 1px solid;
   background: #CDFEAA;
 }
 
-.foot > a:active {
+#lienFOOT:active {
   background: #265301;
   color: #CDFEAA;
 }
@@ -54,7 +54,7 @@ nav {
 }
 
 .nav-icon img {
-  width: 50px;
+  width: 80px;
 }
 .hamburger {
   display: none;
@@ -114,8 +114,8 @@ footer{
 }
 
 #twitter {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 }
 
 #facebook {
@@ -123,10 +123,11 @@ footer{
   height: 70px;
 }
 
-#f1 > p {
-  text-justify: auto;
-  text-align: left;
-  padding-left: 1em;
+#f1 > #text {
+  text-align: justify;
+  text-justify:inter-word;
+  padding: 5px;
+  margin-top: 5%;
 
 }
 #f1 > #titre {
@@ -134,27 +135,29 @@ footer{
 }
 #f2{
   width: 30%;
-  padding-left: 2em;
 }
 
-#f2 > p {
-  text-justify: auto;
-  text-align: center;
-}
+
 
 #f2 > ul {
   list-style-type: none;
-  margin-top: 25px;
+  padding-top: auto;
+  margin-top: 5%;
 
 }
 
 #f2 > ul > li{
-  margin-top: 10px;
-  text-align: left;
-}
+  text-align: justify;
+  text-justify:inter-word;
+  padding: 5px;
 
-#f3 > p{
-  padding-bottom: 1em;
+}
+#imgF3 {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -171,6 +174,14 @@ footer{
 
 
 @media (max-width: 1280px) {
+  #imgF3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #facebook {
+    margin-top: 10px;
+  }
   #c4 {
     grid-column: 1/-1;
     display: flex;
@@ -286,9 +297,7 @@ footer{
 
 @media (max-width: 500px) {
   .nav-icon img {
-    width: 30px;
+    width: 60px;
   }
-  .nav-icon span {
-    font-size: 20px;
-  }
+
 }

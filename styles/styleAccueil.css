@@ -65,6 +65,33 @@ body
     background-image: url("../images/decouvrir_region/kanoe.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+#a2 {
+    background-image: url("../images/economie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+#a3 {
+    background-image: url("../images/actus.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#a4 {
+    background-image: url("../images/handicap.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 #c2 > h1{
@@ -137,15 +164,7 @@ body
 
 
 
-.logo
-{
-    height: 80px;
-    width: 178px;
-    background-image: url('../images/Logo_CA_Privas_Centre_Ardeche.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-}
+
 
 
 .article{
@@ -214,7 +233,7 @@ body
         font-size: 40px;
         -webkit-text-stroke: 1px #FFF;
     }
-    
+
     .grille{
         display: grid;
         grid-template-rows: 0fr 7fr 20fr 7fr;
@@ -222,13 +241,15 @@ body
 }
 
 @media (max-width: 800px) {
-
-    #a1, #a2, #a3, #a4{ 
+    #a4{ 
         z-index: 1;
         position: relative;
+        background-size: 200% 100%;
         border-radius: 5px;
     }
-
+    #a3 {
+        background-size: 100% 140%;
+    }
     #b1, #b2, #b3, #b4 {
         position: absolute;
         font-size: 20px;
