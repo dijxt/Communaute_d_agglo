@@ -14,12 +14,12 @@ body
 h2{
     text-align: center;
     text-decoration: underline;
-    color: rgb(77, 161, 235);
+    color: rgb(34, 34, 34);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 hr.solid {
-    border-top: 3px solid rgb(51, 154, 22);
+    border-top: 3px solid #333;
     margin-top: 3%;
     margin-left: 10%;
     width: 80%;
@@ -32,7 +32,7 @@ hr.solid {
 }
 
 .arbo a :visited{
-    color: greenyellow;
+    color: rgb(0, 0, 0);
     
 }
 
@@ -61,17 +61,47 @@ iframe{
 h3{
     margin-left: 10%;
     font-size: 17px;
-    color: rgb(51, 154, 22);
+    color: rgb(34, 34, 34);
 }
 
 #gr{
     font-weight: bold;
-    color: rgb(38, 38, 38);
+    color: rgb(34, 34, 34);
 }
 
 .article p{
     width: 60%;
     margin-left: 20%;
+    text-align: justify;
+}
+
+.boxes_container{
+    width: 60%;
+    margin: 0 auto;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 50%;
+    padding: 3%;
+    color: #333;
+}
+
+.box img{
+    width: 80%;
+    display: block;
+    margin: 15px auto;
+}
+
+.box h4{
+    text-align: center;
+    font-size: 22px;
+}
+
+.box p{
+    text-align: justify;
 }
 
 @media (max-width: 1280px) {
@@ -83,6 +113,9 @@ h3{
         width: 80%;
         margin-left: 10%;
     }
+    .boxes_container{
+        width: 80%;
+    }
     
 }
 
@@ -93,15 +126,32 @@ h3{
     }
     .article p{
         width: 90%;
-        margin-left: 5%;
+        margin: auto;
     }
     h3{
         margin-left: 5%;
-        font-size: 17px;
-        color: rgb(51, 154, 22);
     }
     hr.solid {
         margin-left: 5%;
         width: 90%;
+    }
+    .boxes_container{
+        width: 90%;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box h4{
+        width: 100%;
+    }
+    .box img{
+        width: 250px;
+    }
+    .box p{
+        width: 100%;
+        margin: auto;
     }
 }
