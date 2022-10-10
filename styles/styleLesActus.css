@@ -1,0 +1,161 @@
+/*html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}*/
+
+body 
+{ 
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.corps{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+
+
+}
+
+/*
+.corps:hover #a1, #a2, #a3, #a4,
+.corps:focus #a1, #a2, #a3, #a4 {
+  transform: scale(1.2);
+}*/
+
+.grille{
+    display: grid;
+    grid-template-rows: 0fr 12fr 4fr;
+}
+
+#c1{
+    position: sticky;
+    grid-column: 1/-1;
+    top: 0;
+    align-self: start;   
+}
+
+/*
+.bordureBasDroit {
+    height: 6em;
+    width: 14em;
+    background-image: url("../images/logoJauneNavbar.png");
+    background-size: cover;
+    position: fixed;
+    top:35px;
+    right: -7px;
+}
+*/
+
+.arbo{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.arbo a :visited{
+    color: rgb(0, 0, 0);
+    
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(34, 34, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcf9f4;
+    height: 10%;
+    width: 70%;
+    margin: 5% 0 5% 0;
+}
+
+.lireLarticle{
+    align-self: flex-end;
+    border-radius: 10px;
+    background-color: rgb(19, 153, 48);
+    width: 7em;
+    height: 3em;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media (max-width: 1280px) {
+
+    .grille{
+        display: grid;
+        grid-template-rows: 0fr 7fr 20fr;
+    }
+}
+
+@media (max-width: 800px) {
+    
+}
+
+/*
+@media (max-width: 1280px) {
+    #c6 {
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot {
+        background-color: greenyellow;
+        width: 80%;
+        height: 200px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+*/
+/*
+.en1clic // les cases en dessous des articles
+{
+    height: 300px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: darkgrey;
+    border: slateblue;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+*/
+
+

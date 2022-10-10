@@ -29,7 +29,7 @@ body
 
 .grille{
     display: grid;
-    grid-template-rows: 0fr 12fr 16fr 4fr;
+    grid-template-rows: 0fr 7fr 16fr 4fr;
 }
 
 #c1{
