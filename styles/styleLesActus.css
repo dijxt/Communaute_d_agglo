@@ -4,15 +4,15 @@
     width: 100%;
 }*/
 
-body 
-{ 
+body
+{
     width: 100%;
     margin: auto;
     padding: 0;
 }
 
 .corps{
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     flex-direction:column;
@@ -28,14 +28,14 @@ body
 
 .grille{
     display: grid;
-    grid-template-rows: 0fr 12fr 4fr;
+    grid-template-rows: 0fr 20fr 4fr;
 }
 
 #c1{
     position: sticky;
     grid-column: 1/-1;
     top: 0;
-    align-self: start;   
+    align-self: start;
 }
 
 /*
@@ -55,40 +55,202 @@ body
     display: block;
     width: 100%;
     text-align: left;
+    font-family: Roboto, sans-serif;
 }
 
 .arbo a :visited{
     color: rgb(0, 0, 0);
-    
+
 }
 
 h2{
-    text-align: center;
-    text-decoration: underline;
+    align-self: flex-start;
     color: rgb(34, 34, 34);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-left: 10%;
+    margin-top: 2.5%;
 }
 
+hr.solid {
+    border-top: 3px solid #2eaadd;
+    width: 80%;
+    margin-top: 2%;
+}
 
 .article{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    background-color: #e9e9e9;
+    height: 13%;
+    width: 65%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ssArticle{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #fcf9f4;
-    height: 10%;
-    width: 70%;
-    margin: 5% 0 5% 0;
+    justify-content: space-around;
+    width: 50%;
 }
 
-.lireLarticle{
-    align-self: flex-end;
-    border-radius: 10px;
-    background-color: rgb(19, 153, 48);
-    width: 7em;
-    height: 3em;
+.article h1, h3, p{
+    font-family: 'Roboto', sans-serif;
 }
 
+.ssArticle h1{
+    font-size: 30px;
+    align-self: center;
+    text-align: center;
+}
+
+.ssArticle > h3{
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+    font-weight: normal;
+}
+
+.lireLarticle1, .lireLarticle2, .lireLarticle3, .lireLarticle4{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 10em;
+    height: 2.5em;
+    border: 1px solid black;
+}
+
+.lireLarticle1:hover, .lireLarticle2:hover, .lireLarticle3:hover, .lireLarticle4:hover{
+    background-color: rgb(113, 201, 236);
+    transition: all 0.4s;
+    color: white;
+    font-weight: bold;
+}
+
+.lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p{
+    padding: 10px 10px 10px 25px;
+}
+
+.chevron1, .chevron2, .chevron3, .chevron4{
+    background-image: url("../images/les_actus/chevron.png");
+    background-size: cover;
+    background-color: white;
+    width: 17px;
+    height: 17px;
+    margin: 10px 0px 10px 2.5px;
+}
+
+#a1ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a1ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/journee-europeennes-patrimoine.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.3s;
+}
+
+#a1ImgContainer:hover{
+    border-right: 5px solid transparent;
+    transition: all 0.2s;
+}
+
+#a1ImgContent:hover{
+    transform: scale(1.2);
+}
+
+
+#a2ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a2ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/recyclage.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.3s;
+}
+
+#a2ImgContainer:hover{
+    border-right: 5px solid transparent;
+    transition: all 0.2s;
+}
+
+#a2ImgContent:hover {
+    transform: scale(1.2);
+}
+
+
+#a3ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a3ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/reduire-sa-consommation-eau.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.3s;
+}
+
+#a3ImgContainer:hover{
+    border-right: 5px solid transparent;
+    transition: all 0.2s;
+}
+
+#a3ImgContent:hover {
+    transform: scale(1.2);
+}
+
+
+#a4ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a4ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/appel-a-projet.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.3s;
+}
+
+#a4ImgContainer:hover{
+    border-right: 5px solid transparent;
+    transition: all 0.2s;
+}
+
+#a4ImgContent:hover {
+    transform: scale(1.2);
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -97,29 +259,78 @@ h2{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 @media (max-width: 1280px) {
 
     .grille{
         display: grid;
-        grid-template-rows: 0fr 7fr 20fr;
+        grid-template-rows: 0fr 20fr 6fr;
+    }
+
+    .article{
+
+        height: 15%;
+        width: 70%;
+        margin: 5% 0 5% 0;
+    }
+
+    .article h1{
+        font-size: 28px;
+    }
+
+    .article h3{
+        font-size: 17px;
     }
 }
 
 @media (max-width: 800px) {
-    
+    .grille{
+        display: grid;
+        grid-template-rows: 0fr 9fr 6fr;
+    }
+
+    .article{
+
+        height: 11%;
+        width: 85%;
+        margin: 10% 0 10% 0;
+    }
+
+    .article h1{
+        font-size: 15px;
+    }
+
+    .article h3{
+        font-size: 12px;
+    }
+
+    .lireLarticle1, .lireLarticle2, .lireLarticle3, .lireLarticle4{
+        width: 7em;
+        height: 1.5em;
+    }
+
+    .lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p{
+        padding: 4px 0px 0px 10px;
+        font-size: 13px;
+    }
+
+    .chevron1, .chevron2, .chevron3, .chevron4{
+        width: 14px;
+        height: 14px;
+        margin: 4px 0px 0px 5px;
+    }
 }
 
 /*

@@ -27,7 +27,7 @@ body
 
 .grille{
     display: grid;
-    grid-template-rows: 0fr 7fr 16fr 4fr;
+    grid-template-rows: 0fr 91vh 6fr 4fr;
 }
 
 #c1{
@@ -219,9 +219,6 @@ h1{
         grid-row-start: 4;
         grid-column-start: 1;
     }
-    .bordureBasDroit {
-        display: none;
-    }
     
 
     #c2 > h1{
@@ -231,7 +228,7 @@ h1{
 
     .grille{
         display: grid;
-        grid-template-rows: 0fr 7fr 20fr 7fr;
+        grid-template-rows: 0fr 91vh 20fr 7fr;
     }
 }
 
@@ -267,40 +264,10 @@ h1{
     }
 }
 
-/*
-@media (max-width: 1280px) {
-    #c6 {
-        grid-column: 1/-1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .foot {
-        background-color: greenyellow;
-        width: 80%;
-        height: 200px;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 5px;
+@media (max-width: 500px) {
+    .grille{
+        grid-template-rows: 0fr 92vh 20fr 7fr;
     }
 }
-*/
-/*
-.en1clic // les cases en dessous des articles
-{
-    height: 300px;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: darkgrey;
-    border: slateblue;
-
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items:center;
-
-}
-*/
 
 
