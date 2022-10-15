@@ -46,7 +46,7 @@
     right: -20px;
     transition: 0.5s;
   }
-  button:hover {
+  /*button:hover {
     background-color: rgb(167, 167, 167);
   }
   button:hover span {
@@ -55,7 +55,7 @@
   button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+  }*/
   
   *,
   ::before,
@@ -92,7 +92,6 @@ body
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: center;
 }
 
 #but > button {
@@ -105,7 +104,6 @@ body
     text-align: center;
     z-index: 25;
     padding: 10px;
-    background-color: none;
     color: rgb(0, 0, 0);
 }
 #c2 {
