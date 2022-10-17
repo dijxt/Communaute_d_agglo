@@ -4,11 +4,16 @@
     width: 100%;
 }*/
 
+html, body, .corps, .grille{
+    scroll-behavior: smooth;
+}
+
 body 
 { 
     width: 100%;
     margin: auto;
     padding: 0;
+    background-color: whitesmoke;
 }
 
 .corps{
@@ -27,7 +32,7 @@ body
 
 .grille{
     display: grid;
-    grid-template-rows: 0fr 91vh 6fr 4fr;
+    grid-template-rows: 0fr 93vh 10fr 4fr;
 }
 
 #c1{
@@ -44,8 +49,19 @@ body
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.flecheScroll{
+    background-image: url("../images/flècheScroll.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95px;
+    width: 59px;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
 
 
@@ -83,7 +99,7 @@ body
 }
 
 #title{
-    width: 500px;
+    width: 640px;
     margin: auto 0;
     text-align: center;
     padding: 20px;
@@ -93,10 +109,10 @@ body
 
 h1{
     color: #2a2a2a;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Figtree', sans-serif;
     font-size: 50px;
-    /*-webkit-text-stroke: 2px #FFF;*/
-    animation: fadeIn 2.5s;
+    /*-webkit-text-stroke: 1px #FFF;*/
+    animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -107,6 +123,7 @@ h1{
 
 
 #c3 {
+    margin-top: 100px;
     display: grid;
     flex-direction: row;
     grid-template-rows: 1fr 1fr;
@@ -117,20 +134,20 @@ h1{
 #a1, #a2, #a3, #a4{ 
     z-index: 1;
     position: relative;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 5px 5px 5px;
     cursor: pointer;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
 
 
 #b1, #b2, #b3, #b4 {
     position: absolute;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Montserrat', sans-serif;
-    top: -44px;
+    top: -41px;
     left: 0;
     z-index: 2;
-    background-color: #FAD02C;
+    background-color: #92d7ffa8;
     border-radius: 5px 5px 0 0;
 }
 
@@ -190,11 +207,23 @@ h1{
 }
 
 @media (max-width: 1280px) {
+    .grille{
+        display: grid;
+        grid-template-rows: 0fr 93vh 28fr 7fr;
+    }
+    
     #c3 {
         display: grid;
         flex-direction: column;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns:4fr;
+        margin-top: 130px;
+    }
+
+    .article{
+        height: 80%;
+        width: 70%;
+        margin-bottom: 7%;
     }
     
     #a1{
@@ -224,13 +253,26 @@ h1{
         -webkit-text-stroke: 1px #FFF;
     }
 
-    .grille{
-        display: grid;
-        grid-template-rows: 0fr 91vh 20fr 7fr;
-    }
 }
 
 @media (max-width: 800px) {
+    .grille{
+        grid-template-rows: 0fr 93vh 23fr 7fr;
+    }
+
+    .flecheScroll{
+        position: absolute;
+        top: 820px;
+        left: 46%;
+    }
+    .article{
+        margin-bottom: 70px;
+    }
+
+    #c3{
+        margin-top: 80px;
+    }
+
     #a4{ 
         z-index: 1;
         position: relative;
@@ -243,22 +285,28 @@ h1{
     #b1, #b2, #b3, #b4 {
         position: absolute;
         font-size: 20px;
-        top: -11px;
+        top: -28px;
         left: 0px;
         z-index: 2;
-        background-color: #FAD02C;
     }
     
     #b1 > p, #b2 > p, #b3 > p, #b4 > p{
         padding: 2px;
     }
     #title{
-        width: 250px;
+        width: 370px;
         padding: 10px;
         margin: 10px;
     }
     h1{
         font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .flecheScroll{
+        display: none;
     }
 }
 

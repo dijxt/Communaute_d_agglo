@@ -256,7 +256,7 @@ footer {
 
   .content-footer {
       max-width: 100%;
-      flex-wrap: wrap;
+      /*flex-wrap: wrap;*/
   }
   .bloc {
       flex-basis: auto;
