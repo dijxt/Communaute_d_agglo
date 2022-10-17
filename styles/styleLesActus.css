@@ -131,7 +131,6 @@ hr.solid {
 .chevron1, .chevron2, .chevron3, .chevron4{
     background-image: url("../images/les_actus/chevron.png");
     background-size: cover;
-    background-color: white;
     width: 17px;
     height: 17px;
     margin: 10px 0 10px 2.5px;
