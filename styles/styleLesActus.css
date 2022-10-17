@@ -38,29 +38,21 @@ body
     align-self: start;
 }
 
-/*
-.bordureBasDroit {
-    height: 6em;
-    width: 14em;
-    background-image: url("../images/logoJauneNavbar.png");
-    background-size: cover;
-    position: fixed;
-    top:35px;
-    right: -7px;
-}
-*/
-
 .arbo{
     padding: 10px;
     display: block;
     width: 100%;
     text-align: left;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.arbo a :visited{
+.arbo a{
+    text-decoration: none;
     color: rgb(0, 0, 0);
+}
 
+.arbo a:hover{
+    text-decoration: underline;
 }
 
 h2{
@@ -142,7 +134,7 @@ hr.solid {
     background-color: white;
     width: 17px;
     height: 17px;
-    margin: 10px 0px 10px 2.5px;
+    margin: 10px 0 10px 2.5px;
 }
 
 #a1ImgContainer {
@@ -322,14 +314,14 @@ hr.solid {
     }
 
     .lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p{
-        padding: 4px 0px 0px 10px;
+        padding: 4px 0 0 10px;
         font-size: 13px;
     }
 
     .chevron1, .chevron2, .chevron3, .chevron4{
         width: 14px;
         height: 14px;
-        margin: 4px 0px 0px 5px;
+        margin: 4px 0 0 5px;
     }
 }
 

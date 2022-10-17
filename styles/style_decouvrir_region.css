@@ -1,29 +1,69 @@
+.arbo{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 0;
+    top: 63px;
+}
+
+.arbo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+hr.solid {
+    border-top: 3px solid #2eaadd;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: rgb(179, 179, 179);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(179, 179, 179);
+}
+tr:nth-child(odd)
+{
+    background-color: white;
+}
+button:hover{
+    background-color: rgb(113, 201, 236);
+    transition: all 0.4s;
+    color: white;
+    font-weight: bold;
+}
 #d1 a:link {
     color: #000000;
-  }
-  
-  
-  #d1 a:visited {
+}
+
+
+#d1 a:visited {
     color: #000000;
-  }
-  
-  
-  #d1 a:focus {
+}
+
+
+#d1 a:focus {
     border-bottom: 1px solid;
     background: #808080;
-  }
-  
-  #d1 a:hover {
+}
+
+#d1 a:hover {
     border-bottom: 1px solid;
     background: #808080;
-  }
-  
-  #d1 a:active {
+}
+
+#d1 a:active {
     background: #c5c5c5;
     color: #808080;
-  }
+}
 
-  button {
+button {
     background-color: white;
     border-radius: 3px;
     border: 1px solid black;
@@ -31,48 +71,36 @@
     width: 60px;
     transition: all 0.5s;
     cursor: pointer;
-  }
-  button span {
+}
+button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  button span:after {
+}
+button span:after {
     content: "\00bb";
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  /*button:hover {
-    background-color: rgb(167, 167, 167);
-  }
-  button:hover span {
-    padding-right: 25px;
-  }
-  button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }*/
-  
-  *,
-  ::before,
-  ::after {
+}
+
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-  
-
-
-body 
-{ 
+body
+{
     width: 100%;
     margin: auto;
     padding: 0;
+    background-color: whitesmoke;
 }
 
 #c5 {
@@ -81,7 +109,6 @@ body
 }
 
 #d1 {
-    background-color: #fcf9f4;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
@@ -99,13 +126,7 @@ body
     height: 50px;
 
 }
-#decouvrir_region {
-    text-decoration: underline;
-    text-align: center;
-    z-index: 25;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-}
+
 #c2 {
     display: flex;
     align-items: center;
@@ -113,7 +134,7 @@ body
 }
 
 #droit, #gauche {
-    margin-top: 350px;
+    margin-top: 280px;
     z-index: 10;
     width: 80px;
     height: auto;
@@ -138,13 +159,13 @@ body
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 750px;
-    width: 1000px;
+    height: 600px;
+    width: 800px;
     overflow: hidden;
 }
 #fig1, #fig2, #fig3, #fig4 {
-    width: 1000px;
-    height: 750px;
+    width: 800px;
+    height: 600px;
     position: relative;
 }
 
@@ -158,7 +179,18 @@ thead th:nth-child(2) {
     text-align: center;
 }
 
+h5 {
+    align-self: flex-start;
+    color: rgb(34, 34, 34);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-left: 10%;
+    margin-top: 4%;
+}
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
 
 #text1, #text2, #text3, #text4 {
     position: absolute;
@@ -171,7 +203,7 @@ thead th:nth-child(2) {
 }
 #imgCARR {
     display: flex;
-    flex-direction: inline;
+    flex-direction: row;
     width: 5600px;
     height: 1000px;
 }
@@ -185,7 +217,7 @@ thead th:nth-child(2) {
     position: sticky;
     top: 0;
     align-self: start;
-    opacity: 1;    
+    opacity: 1;
 }
 
 #c3 {
@@ -197,41 +229,30 @@ thead th:nth-child(2) {
 
 #intro {
     text-align: center;
-    background-color: #fcf9f4;
+    background-color: #e9e9e9;
     padding: 5px;
     font-size: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 15%;
     grid-row-start: 1;
     grid-column-end: 4;
     grid-column-start: 2;
 }
 
-#a1, #a2, #a3, #a4{ 
+#a1, #a2, #a3, #a4{
     z-index: 1;
     position: relative;
     border-radius: 5px;
     cursor: pointer;
     /*transition: all .5s;*/
 }
-#c4 {
-    grid-template-rows: 4/5;
-    grid-template-columns: 1/-1;
-}
+
 #b1, #b2, #b3, #b4 {
     font-size: 30px;
     text-align: left;
     z-index: 2;
-    background-color: none;
 }
 
-#titre {
-    background-color: #FAD02C;
-    font-size: 30px;
 
-}
 #b1 > p, #b2 > p, #b3 > p, #b4 > p{
     padding: 4px;
 }
@@ -246,7 +267,7 @@ thead th:nth-child(2) {
 
 #a1 {
     grid-row-start: 2;
-    grid-column-start: 2;  
+    grid-column-start: 2;
 }
 
 #a2{
@@ -265,7 +286,6 @@ thead th:nth-child(2) {
 }
 
 .article{
-    background-color: #e9e9e9;
     height: 80%;
     width: 90%;
     text-align: center;
@@ -275,7 +295,7 @@ thead th:nth-child(2) {
 
 @media (max-width: 1280px) {
     .grille {
-        grid-template-rows: 0fr 1fr 2fr 1fr;
+        grid-template-rows: 0fr 0fr 1fr 0.3fr 0fr;
     }
     #c3 {
         display: grid;
@@ -285,7 +305,6 @@ thead th:nth-child(2) {
     }
     #intro {
         text-align: center;
-        background-color: grey;
         font-size: 18px;
         grid-row-start: 1;
         grid-column-start: 2;
@@ -294,7 +313,7 @@ thead th:nth-child(2) {
     #a1{
         grid-row-start: 2;
         grid-column-start: 2;
-        
+
     }
 
     #a2{
@@ -363,6 +382,10 @@ thead th:nth-child(2) {
         display: grid;
         grid-template-rows: 0fr 2fr 12fr 4fr;
     }
+    hr.solid {
+        margin-left: 0;
+        width: 90%;
+    }
     #b1, #b2, #b3, #b4 {
         font-size: 20px;
     }
@@ -410,11 +433,5 @@ thead th:nth-child(2) {
     }
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-}
 
-h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-}
+
