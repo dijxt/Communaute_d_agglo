@@ -1,21 +1,24 @@
 $(document).ready(init);
 var a;
-function init(){
-    a = $("#show");
+
+function init() {
+    a = $(".show");
     a.on("click", montrer);
-    $("#cacher").hide();
+    $(".cacher").hide();
 }
 
-function montrer(){
+function montrer() {
+    a = $(this);
     a.off("click", montrer);
     a.on("click", cacher);
     a.text("Lire moins");
-    $("#cacher").show("fast");
+    a.parent().prev().show("fast");
 }
 
-function cacher(){
+function cacher() {
+    a = $(this);
     a.off("click", cacher);
     a.on("click", montrer);
     a.text("Lire plus");
-    $("#cacher").hide("fast");
+    a.parent().prev().hide("fast");
 }

@@ -1,4 +1,4 @@
-.arbo{
+.arbo {
     padding: 10px;
     display: block;
     width: 100%;
@@ -9,7 +9,7 @@
     top: 63px;
 }
 
-.arbo a{
+.arbo a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -37,16 +37,18 @@ td {
 tr:nth-child(even) {
     background-color: rgb(179, 179, 179);
 }
-tr:nth-child(odd)
-{
+
+tr:nth-child(odd) {
     background-color: white;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(113, 201, 236);
     transition: all 0.4s;
     color: white;
     font-weight: bold;
 }
+
 #d1 a:link {
     color: #000000;
 }
@@ -81,12 +83,14 @@ button {
     transition: all 0.5s;
     cursor: pointer;
 }
+
 button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
+
 button span:after {
     content: "\00bb";
     position: absolute;
@@ -104,8 +108,7 @@ button span:after {
     padding: 0;
 }
 
-body
-{
+body {
     width: 100%;
     margin: auto;
     padding: 0;
@@ -124,6 +127,7 @@ body
     flex-direction: column;
     justify-content: center;
 }
+
 #but {
     display: flex;
     flex-direction: row;
@@ -149,8 +153,8 @@ body
     height: auto;
 }
 
-#gauche{
-    transform:rotate(180deg);
+#gauche {
+    transform: rotate(180deg);
     position: absolute;
     top: 0;
     left: 0;
@@ -159,11 +163,13 @@ body
 #droit:hover, #gauche:hover {
     cursor: grab;
 }
+
 #droit {
     position: absolute;
     top: 0;
     right: 0;
 }
+
 #carroussel {
     display: flex;
     flex-direction: row;
@@ -172,6 +178,7 @@ body
     width: 800px;
     overflow: hidden;
 }
+
 #fig1, #fig2, #fig3, #fig4 {
     width: 800px;
     height: 600px;
@@ -205,24 +212,26 @@ p {
     position: absolute;
     bottom: 0;
     right: 20px;
-    font-size:2em;
+    font-size: 2em;
     color: rgb(255, 255, 255);
     text-shadow: 0.1em 0.1em 0.05em #333;
     background-color: rgba(255, 0, 0, 0);
 }
+
 #imgCARR {
     display: flex;
     flex-direction: row;
     width: 5600px;
     height: 1000px;
 }
-.grille{
+
+.grille {
     grid-gap: 25px;
     display: grid;
     grid-template-rows: 0fr 1fr 1fr 0.4fr 0fr;
 }
 
-#c1{
+#c1 {
     position: sticky;
     top: 0;
     align-self: start;
@@ -247,7 +256,7 @@ p {
     grid-column-start: 2;
 }
 
-#a1, #a2, #a3, #a4{
+#a1, #a2, #a3, #a4 {
     z-index: 1;
     position: relative;
     border-radius: 5px;
@@ -262,7 +271,7 @@ p {
 }
 
 
-#b1 > p, #b2 > p, #b3 > p, #b4 > p{
+#b1 > p, #b2 > p, #b3 > p, #b4 > p {
     padding: 4px;
 }
 
@@ -279,22 +288,22 @@ p {
     grid-column-start: 2;
 }
 
-#a2{
+#a2 {
     grid-row-start: 2;
     grid-column-start: 3;
 }
 
-#a3{
+#a3 {
     grid-row-start: 3;
     grid-column-start: 2;
 }
 
-#a4{
+#a4 {
     grid-row-start: 3;
     grid-column-start: 3;
 }
 
-.article{
+.article {
     height: 80%;
     width: 90%;
     text-align: center;
@@ -306,12 +315,14 @@ p {
     .grille {
         grid-template-rows: 0fr 0.3fr 0.3fr 0.1fr 0fr;
     }
+
     #c3 {
         display: grid;
         flex-direction: column;
         grid-template-rows: 0.1fr 0.2fr 0.3fr 0.2fr 0.2fr;
         grid-template-columns:2fr 4fr 2fr;
     }
+
     #intro {
         text-align: center;
         font-size: 18px;
@@ -319,125 +330,146 @@ p {
         grid-column-start: 2;
         grid-column-end: 2;
     }
-    #a1{
+
+    #a1 {
         grid-row-start: 2;
         grid-column-start: 2;
 
     }
 
-    #a2{
+    #a2 {
         grid-row-start: 3;
         grid-column-start: 2;
     }
 
-    #a3{
+    #a3 {
         grid-row-start: 4;
         grid-column-start: 2;
     }
 
-    #a4{
+    #a4 {
         grid-row-start: 5;
         grid-column-start: 2;
     }
 
-    #c2 > h1{
+    #c2 > h1 {
         font-size: 40px;
         -webkit-text-stroke: 1px #FFF;
     }
 }
-@media (max-width: 1000px) or (max-height:600px) {
-    .grille{
+
+@media (max-width: 1000px) or (max-height: 600px) {
+    .grille {
         grid-gap: 25px;
         display: grid;
         grid-template-rows: 0fr 0.3fr 2fr 0.7fr 0fr;
     }
+
     #carroussel {
         height: 333px;
         width: 500px;
     }
+
     #fig1, #fig2, #fig3, #fig4 {
         width: 500px;
         height: 333px;
         position: relative;
     }
+
     #droit, #gauche {
         margin-top: 120px;
         z-index: 10;
         width: 80px;
         height: auto;
     }
+
     #text1, #text2, #text3, #text4 {
         position: absolute;
         bottom: 0;
         right: 3px;
-        font-size:1.5em;
+        font-size: 1.5em;
     }
+
     #imgCARR {
         width: 2000px;
         height: 333px;
     }
+
     #img1, #img2, #img3, #img4 {
-        height:333px;
+        height: 333px;
         width: 500px;
     }
+
     #c3 {
         grid-template-rows: 0.3fr 1.5fr 2fr 1fr 1.1fr;
         grid-template-columns:2fr 7fr 2fr;
     }
 }
+
 @media (max-width: 500px) {
-    .grille{
+    .grille {
         grid-gap: 25px;
         display: grid;
         grid-template-rows: 0fr 0.15fr 0.15fr 0.05fr 0fr;
     }
+
     hr.solid {
         margin-left: 0;
         width: 90%;
     }
+
     #b1, #b2, #b3, #b4 {
         font-size: 20px;
     }
+
     .contenu {
         margin-top: 5%;
     }
+
     #c3 {
         grid-template-rows: 0.4fr 2fr 2.7fr 1.2fr 1.6fr;
         grid-template-columns:1fr 9fr 1fr;
     }
+
     #carroussel {
         height: 200px;
         width: 300px;
     }
+
     #fig1, #fig2, #fig3, #fig4 {
         width: 300px;
         height: 200px;
         position: relative;
     }
+
     #droit, #gauche {
         margin-top: 70px;
         z-index: 10;
         width: 40px;
         height: auto;
     }
+
     #text1 {
         position: absolute;
         bottom: 0;
         right: 3px;
-        font-size:0.9em;
+        font-size: 0.9em;
     }
+
     #text2, #text3, #text4 {
         position: absolute;
         bottom: 0;
         right: 3px;
-        font-size:1em;
+        font-size: 1em;
     }
+
     #imgCARR {
         width: 1200px;
         height: 200px;
     }
+
     #img1, #img2, #img3, #img4 {
-        height:200px;
+        height: 200px;
         width: 300px;
     }
 }

@@ -4,24 +4,23 @@
     width: 100%;
 }*/
 
-html, body, .corps, .grille{
+html, body, .corps, .grille {
     scroll-behavior: smooth;
 }
 
-body 
-{ 
+body {
     width: 100%;
     margin: auto;
     padding: 0;
     background-color: whitesmoke;
 }
 
-.corps{
+.corps {
     background-color: whitesmoke;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 /*
@@ -30,23 +29,23 @@ body
   transform: scale(1.2);
 }*/
 
-.grille{
+.grille {
     display: grid;
     grid-template-rows: 0fr 93vh 10fr 4fr;
 }
 
-#c1{
+#c1 {
     position: sticky;
     grid-column: 1/-1;
     top: 0;
     align-self: start;
-    opacity: 1;    
+    opacity: 1;
 }
 
-#c2{
+#c2 {
     grid-column: 1/-1;
     background-image: url('../images/privas-ardeche2.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -54,7 +53,7 @@ body
     align-items: center;
 }
 
-.flecheScroll{
+.flecheScroll {
     background-image: url("../images/flècheScroll.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -92,13 +91,13 @@ body
 
 #a4 {
     background-image: url("../images/handicap.jpeg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
-#title{
+#title {
     width: 640px;
     margin: auto 0;
     text-align: center;
@@ -107,7 +106,7 @@ body
     border-radius: 10px;
 }
 
-h1{
+h1 {
     color: #2a2a2a;
     font-family: 'Figtree', sans-serif;
     font-size: 50px;
@@ -116,10 +115,13 @@ h1{
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
 
 
 #c3 {
@@ -131,7 +133,7 @@ h1{
     background-color: whitesmoke;
 }
 
-#a1, #a2, #a3, #a4{ 
+#a1, #a2, #a3, #a4 {
     z-index: 1;
     position: relative;
     border-radius: 0 5px 5px 5px;
@@ -151,33 +153,32 @@ h1{
     border-radius: 5px 5px 0 0;
 }
 
-#b1 > p, #b2 > p, #b3 > p, #b4 > p{
+#b1 > p, #b2 > p, #b3 > p, #b4 > p {
     padding: 4px;
 }
 
 
-
 #a1 {
     grid-row-start: 1;
-    grid-column-start: 2;  
+    grid-column-start: 2;
 }
 
-#a2{
+#a2 {
     grid-row-start: 1;
     grid-column-start: 3;
 }
 
-#a3{
+#a3 {
     grid-row-start: 2;
     grid-column-start: 2;
 }
 
-#a4{
+#a4 {
     grid-row-start: 2;
     grid-column-start: 3;
 }
 
-.article{
+.article {
     background-color: grey;
     height: 80%;
     width: 90%;
@@ -193,25 +194,25 @@ h1{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 @media (max-width: 1280px) {
-    .grille{
+    .grille {
         display: grid;
         grid-template-rows: 0fr 93vh 28fr 7fr;
     }
-    
+
     #c3 {
         display: grid;
         flex-direction: column;
@@ -220,35 +221,35 @@ h1{
         margin-top: 130px;
     }
 
-    .article{
+    .article {
         height: 80%;
         width: 70%;
         margin-bottom: 7%;
     }
-    
-    #a1{
+
+    #a1 {
         grid-row-start: 1;
         grid-column-start: 1;
-        
+
     }
 
-    #a2{
+    #a2 {
         grid-row-start: 2;
         grid-column-start: 1;
     }
 
-    #a3{
+    #a3 {
         grid-row-start: 3;
         grid-column-start: 1;
     }
 
-    #a4{
+    #a4 {
         grid-row-start: 4;
         grid-column-start: 1;
     }
-    
 
-    #c2 > h1{
+
+    #c2 > h1 {
         font-size: 40px;
         -webkit-text-stroke: 1px #FFF;
     }
@@ -256,33 +257,36 @@ h1{
 }
 
 @media (max-width: 800px) {
-    .grille{
+    .grille {
         grid-template-rows: 0fr 93vh 12fr 7fr;
     }
 
-    .flecheScroll{
+    .flecheScroll {
         position: absolute;
         top: 820px;
         left: 46%;
     }
-    .article{
+
+    .article {
         margin-bottom: 70px;
         height: 75%;
     }
 
-    #c3{
+    #c3 {
         margin-top: 80px;
     }
 
-    #a4{ 
+    #a4 {
         z-index: 1;
         position: relative;
         background-size: 200% 100%;
         border-radius: 5px;
     }
+
     #a3 {
         background-size: 100% 140%;
     }
+
     #b1, #b2, #b3, #b4 {
         position: absolute;
         font-size: 20px;
@@ -290,29 +294,31 @@ h1{
         left: 0px;
         z-index: 2;
     }
-    
-    #b1 > p, #b2 > p, #b3 > p, #b4 > p{
+
+    #b1 > p, #b2 > p, #b3 > p, #b4 > p {
         padding: 2px;
     }
-    #title{
+
+    #title {
         width: 370px;
         padding: 10px;
         margin: 10px;
     }
-    h1{
+
+    h1 {
         font-size: 30px;
     }
-    
+
 }
 
 @media (max-width: 800px) {
-    .flecheScroll{
+    .flecheScroll {
         display: none;
     }
 }
 
 @media (max-width: 500px) {
-    .grille{
+    .grille {
         grid-template-rows: 0fr 93vh 12fr 7fr;
     }
 }
