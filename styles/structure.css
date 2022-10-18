@@ -114,10 +114,12 @@ footer {
 .footer-medias h3 {
   font-size: 22px;
   padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-contact p {
   padding: 5px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Services */
@@ -165,7 +167,6 @@ footer {
 @media (max-width: 900px) {
   nav {
     padding: 15px 20px;
-    position: relative;
   }
 
   .nav-icon {
@@ -256,7 +257,7 @@ footer {
 
   .content-footer {
       max-width: 100%;
-      /*flex-wrap: wrap;*/
+      flex-direction: column;
   }
   .bloc {
       flex-basis: auto;

@@ -257,7 +257,7 @@ h1{
 
 @media (max-width: 800px) {
     .grille{
-        grid-template-rows: 0fr 93vh 23fr 7fr;
+        grid-template-rows: 0fr 93vh 12fr 7fr;
     }
 
     .flecheScroll{
@@ -267,6 +267,7 @@ h1{
     }
     .article{
         margin-bottom: 70px;
+        height: 75%;
     }
 
     #c3{
@@ -312,7 +313,7 @@ h1{
 
 @media (max-width: 500px) {
     .grille{
-        grid-template-rows: 0fr 92vh 20fr 7fr;
+        grid-template-rows: 0fr 93vh 12fr 7fr;
     }
 }
 

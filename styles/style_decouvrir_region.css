@@ -21,8 +21,17 @@ hr.solid {
     margin-bottom: 20px;
 }
 
+#titreTab {
+    font-family: 'Montserrat', sans-serif;
+}
+
 th {
     background-color: rgb(179, 179, 179);
+    font-family: 'Montserrat', sans-serif;
+}
+
+td {
+    font-family: 'Roboto', sans-serif;
 }
 
 tr:nth-child(even) {
@@ -295,7 +304,7 @@ p {
 
 @media (max-width: 1280px) {
     .grille {
-        grid-template-rows: 0fr 0fr 1fr 0.3fr 0fr;
+        grid-template-rows: 0fr 0.3fr 0.3fr 0.1fr 0fr;
     }
     #c3 {
         display: grid;
@@ -340,7 +349,7 @@ p {
     .grille{
         grid-gap: 25px;
         display: grid;
-        grid-template-rows: 0fr 2fr 8fr 4fr;
+        grid-template-rows: 0fr 0.3fr 2fr 0.7fr 0fr;
     }
     #carroussel {
         height: 333px;
@@ -380,7 +389,7 @@ p {
     .grille{
         grid-gap: 25px;
         display: grid;
-        grid-template-rows: 0fr 2fr 12fr 4fr;
+        grid-template-rows: 0fr 0.15fr 0.15fr 0.05fr 0fr;
     }
     hr.solid {
         margin-left: 0;
@@ -432,6 +441,3 @@ p {
         width: 300px;
     }
 }
-
-
-
