@@ -3,49 +3,48 @@
 
 $(init);
 
-function init() {
-    $(".lireLarticle1").mouseover(chevronBlanc1);
-    $(".lireLarticle1").mouseout(chevronNoir1);
+function init(){
+    $(".lireLarticle1").mouseover(chevronBleu1);
+    $(".lireLarticle1").mouseout(chevronBlanc1);
 
-    $(".lireLarticle2").mouseover(chevronBlanc2);
-    $(".lireLarticle2").mouseout(chevronNoir2);
+    $(".lireLarticle2").mouseover(chevronBleu2);
+    $(".lireLarticle2").mouseout(chevronBlanc2);
 
-    $(".lireLarticle3").mouseover(chevronBlanc3);
-    $(".lireLarticle3").mouseout(chevronNoir3);
+    $(".lireLarticle3").mouseover(chevronBleu3);
+    $(".lireLarticle3").mouseout(chevronBlanc3);
 
-    $(".lireLarticle4").mouseover(chevronBlanc4);
-    $(".lireLarticle4").mouseout(chevronNoir4);
+    $(".lireLarticle4").mouseover(chevronBleu4);
+    $(".lireLarticle4").mouseout(chevronBlanc4);
 }
 
-function chevronBlanc1() {
+function chevronBleu1(){
+    $(".chevron1").css("background-image", "url(\"../images/les_actus/chevronBleu.png\")");
+}
+
+function chevronBlanc1(){
     $(".chevron1").css("background-image", "url(\"../images/les_actus/chevronBlanc.png\")");
 }
 
-function chevronNoir1() {
-    $(".chevron1").css("background-image", "url(\"../images/les_actus/chevron.png\")");
+function chevronBleu2(){
+    $(".chevron2").css("background-image", "url(\"../images/les_actus/chevronBleu.png\")");
 }
 
-function chevronBlanc2() {
+function chevronBlanc2(){
     $(".chevron2").css("background-image", "url(\"../images/les_actus/chevronBlanc.png\")");
 }
 
-function chevronNoir2() {
-    $(".chevron2").css("background-image", "url(\"../images/les_actus/chevron.png\")");
+function chevronBleu3(){
+    $(".chevron3").css("background-image", "url(\"../images/les_actus/chevronBleu.png\")");
 }
 
-function chevronBlanc3() {
+function chevronBlanc3(){
     $(".chevron3").css("background-image", "url(\"../images/les_actus/chevronBlanc.png\")");
 }
 
-function chevronNoir3() {
-    $(".chevron3").css("background-image", "url(\"../images/les_actus/chevron.png\")");
+function chevronBleu4(){
+    $(".chevron4").css("background-image", "url(\"../images/les_actus/chevronBleu.png\")");
 }
 
-function chevronBlanc4() {
+function chevronBlanc4(){
     $(".chevron4").css("background-image", "url(\"../images/les_actus/chevronBlanc.png\")");
 }
-
-function chevronNoir4() {
-    $(".chevron4").css("background-image", "url(\"../images/les_actus/chevron.png\")");
-}
-
