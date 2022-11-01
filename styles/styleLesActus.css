@@ -16,7 +16,7 @@ body
 
 .grille{
     display: grid;
-    grid-template-rows: 0fr 18fr 4fr;
+    grid-template-rows: 0fr 39fr 4fr;
 }
 
 #c1{
@@ -51,26 +51,37 @@ h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     margin-left: 10%;
-    margin-top: 1.5%;
+    margin-top: 1%;
     cursor: default;
+}
+
+h4{
+    align-self: flex-start;
+    color: rgb(34, 34, 34);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 10.1%;
+    margin-top: 1%;
+    cursor: default;
+    font-weight: 200;
 }
 
 hr.solid {
     border-top: 3px solid #2eaadd;
     width: 80%;
-    margin-top: 2%;
+    margin-top: 1.3%;
 }
 
 .article{
     display: flex;
     flex-direction: row;
     background-color: #e9e9e9;
-    height: 13.5%;
-    width: 61%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    height: 9.5%;
+    width: 65%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: default;
     box-shadow: -10px 10px 3px 1px #d1d1d1;
     transition: all 0.7s;
 }
@@ -110,7 +121,7 @@ hr.solid {
     font-weight: normal;
 }
 
-.lireLarticle1, .lireLarticle2, .lireLarticle3, .lireLarticle4{
+.lireLarticle1, .lireLarticle2, .lireLarticle3, .lireLarticle4, .lireLarticle5, .lireLarticle6, .lireLarticle7, .lireLarticle8{
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -121,20 +132,21 @@ hr.solid {
     border: 2px solid #2eaadd;
     color: #fff;
     transition: all 0.3s;
+    cursor: pointer;
 
 }
 
-.lireLarticle1:hover, .lireLarticle2:hover, .lireLarticle3:hover, .lireLarticle4:hover{
+.lireLarticle1:hover, .lireLarticle2:hover, .lireLarticle3:hover, .lireLarticle4:hover, .lireLarticle5:hover, .lireLarticle6:hover, .lireLarticle7:hover,.lireLarticle8:hover{
     background-color: whitesmoke;
     color: #2eaadd;;
 }
 
-.lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p{
+.lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p, .lireLarticle5 p, .lireLarticle6 p, .lireLarticle7 p, .lireLarticle8 p{
     padding: 10px 10px 10px 25px;
     font-weight: bold;
 }
 
-.chevron1, .chevron2, .chevron3, .chevron4{
+.chevron1, .chevron2, .chevron3, .chevron4, .chevron5, .chevron6, .chevron7, .chevron8{
     background-image: url("../images/les_actus/chevronBlanc.png");
     background-size: cover;
     width: 17px;
@@ -159,10 +171,10 @@ hr.solid {
     transition: transform ease 0.45s;
 }
 
-
+/*
 #a1ImgContent:hover{
     transform: scale(1.2);
-}
+}*/
 
 
 #a2ImgContainer {
@@ -182,9 +194,9 @@ hr.solid {
     transition: transform ease 0.45s;
 }
 
-#a2ImgContent:hover {
+/* #a2ImgContent:hover {
     transform: scale(1.2);
-}
+} */
 
 
 #a3ImgContainer {
@@ -204,9 +216,9 @@ hr.solid {
     transition: transform ease 0.45s;
 }
 
-#a3ImgContent:hover {
+/* #a3ImgContent:hover {
     transform: scale(1.2);
-}
+} */
 
 
 #a4ImgContainer {
@@ -226,9 +238,94 @@ hr.solid {
     transition: transform ease 0.45s;
 }
 
-#a4ImgContent:hover {
+/* #a4ImgContent:hover {
     transform: scale(1.2);
+} */
+
+#a5ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
 }
+
+#a5ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/ardecheB.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.45s;
+}
+
+/* #a5ImgContent:hover {
+    transform: scale(1.2);
+} */
+
+#a6ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a6ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/consigneTri.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.45s;
+}
+
+/* #a6ImgContent:hover {
+    transform: scale(1.2);
+} */
+
+#a7ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a7ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/chateau.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.45s;
+}
+
+/* #a7ImgContent:hover {
+    transform: scale(1.2);
+} */
+
+#a8ImgContainer {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    background-color: #2eaadd;
+}
+
+#a8ImgContent{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/les_actus/laNeuve.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: transform ease 0.45s;
+}
+
+/* #a8ImgContent:hover {
+    transform: scale(1.2);
+} */
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -250,6 +347,17 @@ hr.solid {
     background: #555;
 }
 
+@media (max-width: 1600px) {
+    .grille{
+        grid-template-rows: 0fr 50fr 6fr;
+    }
+    
+    .article{
+        height: 8%;
+    }
+}
+
+
 @media (max-width: 1520px) {
     .article h1{
         font-size: 26px;
@@ -264,12 +372,22 @@ hr.solid {
 @media (max-width: 1280px) {
 
     .grille{
-        grid-template-rows: 0fr 22fr 6fr;
+        grid-template-rows: 0fr 40fr 6fr;
+    }
+
+    h2{
+        font-size: 32px;
+
+    }
+
+    h4{
+        font-size: 15.5px;
+
     }
 
     .article{
 
-        height: 13%;
+        height: 8%;
         width: 70%;
         margin: 5% 0 5% 0;
     }
@@ -281,18 +399,20 @@ hr.solid {
     .article h3{
         font-size: 15px;
     }
+
+    
 }
 
 @media (max-width: 1000px) {
 
     .grille{
-        grid-template-rows: 0fr 12fr 6fr;
+        grid-template-rows: 0fr 18fr 6fr;
     }
 }
 
 @media (max-width: 800px) {
     .grille{
-        grid-template-rows: 0fr 13fr 6fr;
+        grid-template-rows: 0fr 20fr 6fr;
     }
 
     #a1{
@@ -304,19 +424,24 @@ hr.solid {
         margin-left: 5%;
     }
 
+    h4{
+        font-size: 12px;
+        margin-left: 5%;
+    }
+
     hr.solid {
         width: 90%;
     }
 
     .article{
 
-        height: 13.5%;
+        height: 7.5%;
         width: 85%;
         margin: 5% 0 5% 0;
     }
 
     .article h1{
-        font-size: 14px;
+        font-size: 13.5px;
         margin-top: 5px;
     }
 
@@ -324,26 +449,26 @@ hr.solid {
         font-size: 12px;
     }
 
-    .lireLarticle1, .lireLarticle2, .lireLarticle3, .lireLarticle4{
-        width: 7em;
-        height: 1.5em;
+    .lireLarticle1, .lireLarticle2, .lireLarticle3, .lireLarticle4, .lireLarticle5, .lireLarticle6, .lireLarticle7, .lireLarticle8{
+        width: 6em;
+        height: 1.3em;
     }
 
-    .lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p{
-        padding: 4px 0 0 10px;
-        font-size: 13px;
+    .lireLarticle1 p, .lireLarticle2 p, .lireLarticle3 p, .lireLarticle4 p, .lireLarticle5 p, .lireLarticle6 p, .lireLarticle7 p, .lireLarticle8 p{
+        padding: 2px 0 0 10px;
+        font-size: 12px;
     }
 
-    .chevron1, .chevron2, .chevron3, .chevron4{
+    .chevron1, .chevron2, .chevron3, .chevron4, .chevron5, .chevron6, .chevron7, .chevron8{
         width: 14px;
         height: 14px;
-        margin: 4px 0 0 5px;
+        margin: 2px 0 0 5px;
     }
 }
 
 @media (max-width: 750px) {
     .grille{
-        grid-template-rows: 0fr 7fr 6fr;
+        grid-template-rows: 0fr 13fr 6fr;
     }
 
     .article{
@@ -352,7 +477,7 @@ hr.solid {
 
     .article h1{
         font-size: 12.5px;
-        margin-top: 3px;
+        margin-top: 0px;
     }
 
     .article h3{

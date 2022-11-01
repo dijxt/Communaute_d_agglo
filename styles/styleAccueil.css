@@ -31,7 +31,7 @@ body {
 
 .grille {
     display: grid;
-    grid-template-rows: 0fr 93vh 10fr 4fr;
+    grid-template-rows: 0fr 94vh 10fr 4fr;
 }
 
 #c1 {
@@ -210,7 +210,7 @@ h1 {
 @media (max-width: 1280px) {
     .grille {
         display: grid;
-        grid-template-rows: 0fr 93vh 28fr 7fr;
+        grid-template-rows: 0fr 94vh 16fr 7fr;
     }
 
     #c3 {
@@ -218,11 +218,11 @@ h1 {
         flex-direction: column;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns:4fr;
-        margin-top: 130px;
+        margin-top: 70px;
     }
 
     .article {
-        height: 80%;
+        height: 65%;
         width: 70%;
         margin-bottom: 7%;
     }
@@ -319,7 +319,7 @@ h1 {
 
 @media (max-width: 500px) {
     .grille {
-        grid-template-rows: 0fr 93vh 12fr 7fr;
+        grid-template-rows: 0fr 94vh 12fr 7fr;
     }
 }
 
